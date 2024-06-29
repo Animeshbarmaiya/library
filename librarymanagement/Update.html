@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Update Book</title>
+<style>
+    body {
+        background-image: url('https://i.pinimg.com/originals/5d/f5/36/5df536dba84a53fa0f01fda3d9f1b191.png');
+        background-size: cover;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .container {
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        display: flex;
+        align-items: center;
+        width: fit-content;
+    }
+
+    form {
+        text-align: left;
+        margin-right: 20px; /* Add space between form and image */
+    }
+
+    form label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    form input[type="number"],
+    form input[type="text"] {
+        width: calc(100% - 22px);
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 10px; /* Add border-radius */
+    }
+
+    form input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #B03060; /* Light maroon color */
+        color: white;
+        border: none;
+        border-radius: 10px; /* Add border-radius */
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    form input[type="submit"]:hover {
+        background-color: #A52A2A; /* Darker maroon color */
+    }
+
+    .image-container {
+        width: 300px; /* Adjust image width to double the size */
+        height: 480px; /* Adjust image height */
+    }
+
+    .image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensure image scales proportionally */
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <form action="updatebook">
+            <label for="id">Enter Book ID:</label>
+            <input type="number" id="id" name="id" required>
+            
+            <label for="name">Enter New Book Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="author">Enter Author Name:</label>
+            <input type="text" id="author" name="Author" required>
+            
+            <label for="genre">Enter Genre Name:</label>
+            <input type="text" id="genre" name="joner" required>
+            
+            <label for="price">Enter Book Price:</label>
+            <input type="number" id="price" name="Price" required>
+            
+            <input type="submit" value="Submit">
+        </form>
+        <div class="image-container">
+            <img src="https://i.pinimg.com/564x/d3/83/69/d3836900df6cfeef7164d8efc85c41ab.jpg" alt="Book Image">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Library Management</title>
+<style>
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    body {
+        background-image: url('https://images8.alphacoders.com/128/thumb-1920-1280875.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    .form-container {
+        background-color: rgba(255, 250, 240, 0.9); /* Candlelight color */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        display: flex;
+        align-items: center;
+        animation: fadeIn 2s ease-in-out;
+        max-width: 800px; /* Increase the maximum width */
+        width: 100%;
+        height: 400px; /* Double the original height (200px * 2) */
+    }
+
+    .form-container img {
+        max-width: 400px; /* Double the original width (200px * 2) */
+        height: 100%; /* Adjust image to take full height */
+        border-radius: 10px;
+        margin-right: 20px;
+        object-fit: cover; /* Ensure image covers the full height without distortion */
+    }
+
+    .form-content {
+        text-align: center;
+        flex-grow: 1;
+    }
+
+    .form-content button {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .form-content button:hover {
+        transform: scale(1.05);
+    }
+
+    .form-content button[type="submit"]:first-of-type {
+        background-color: #FFD700; /* Admin button color - Gold */
+        color: white;
+    }
+
+    .form-content button[type="submit"]:first-of-type:hover {
+        background-color: #FFC700; /* Darker gold shade */
+    }
+
+    .form-content button[type="submit"]:last-of-type {
+        background-color: #FFDD44; /* User button color - Light yellow */
+        color: white;
+    }
+
+    .form-content button[type="submit"]:last-of-type:hover {
+        background-color: #FFCC00; /* Darker light yellow */
+    }
+</style>
+</head>
+<body>
+    <div class="form-container">
+        <img src="https://image.freepik.com/free-vector/mobile-login-concept-illustration_114360-2650.jpg" alt="Library Photo">
+        <div class="form-content">
+            <form action="Login.html" method="post">
+                <button type="submit">Admin Login</button>
+            </form>
+            <form action="RegistrationForm.html" method="post">
+                <button type="submit">User Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

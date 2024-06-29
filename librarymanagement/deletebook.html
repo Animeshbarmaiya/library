@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Delete Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url('https://images6.alphacoders.com/130/thumb-1920-1302989.png'); /* Replace 'https://example.com/background-image.jpg' with the URL of your background image */
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    form {
+        background-color: rgba(255, 215, 124, 0.8); /* Yellow-orange mist tone */
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 300px;
+    }
+
+    input[type="number"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #FFA500; /* Orange color */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #FF8C00; /* Darker shade of orange */
+    }
+</style>
+</head>
+<body>
+    <form action="dlt" method="post">
+        <input type="number" name="dlt" placeholder="Enter ID to delete" required>
+        <input type="submit" value="Delete">
+    </form>
+</body>
+</html>

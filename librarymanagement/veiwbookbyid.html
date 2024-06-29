@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Library Management System - View Book by ID</title>
+<style>
+    :root {
+        --background-color: rgba(255, 248, 240, 0.9); /* Light beige background */
+        --primary-color: #8B4513; /* SaddleBrown color */
+        --primary-hover-color: #A0522D; /* Sienna color */
+        --border-color: #D2B48C; /* Tan color for borders */
+        --font-color: #333333;
+        --shadow-color: rgba(0, 0, 0, 0.3);
+    }
+    body {
+        background-image: url('https://wallpaperaccess.com/full/253442.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    form {
+        background-color: var(--background-color);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px var(--shadow-color);
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
+        position: relative;
+    }
+    h1 {
+        margin-bottom: 20px;
+        color: var(--primary-color);
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        font-size: 24px;
+    }
+    label {
+        display: block;
+        margin-bottom: 8px;
+        color: #666666;
+    }
+    input[type="number"] {
+        width: calc(100% - 20px);
+        padding: 12px;
+        margin-bottom: 20px;
+        border: 1px solid var(--border-color);
+        border-radius: 4px;
+        font-size: 16px;
+        transition: border-color 0.3s;
+        background-color: #fdf5e6; /* Light beige for inputs */
+    }
+    input[type="number"]:focus {
+        border-color: var(--primary-color);
+        outline: none;
+    }
+    input[type="submit"] {
+        background-color: var(--primary-color);
+        color: #ffffff;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s;
+    }
+    input[type="submit"]:hover {
+        background-color: var(--primary-hover-color);
+    }
+    .loading-indicator {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 18px;
+        color: var(--primary-color);
+    }
+    .error-message {
+        display: none;
+        color: red;
+        margin-top: 10px;
+    }
+</style>
+</head>
+<body>
+    <form action="viewbyid.jsp">
+        <h1>View Book by ID</h1>
+        <label for="book-id">Enter ID:</label>
+        <input type="number" id="book-id" name="book-id" aria-label="Book ID" required>
+        <input type="submit" value="View Book">
+        <div class="loading-indicator" id="loading-indicator">Loading...</div>
+        <div class="error-message" id="error-message">Please enter a valid book ID.</div>
+    </form>
+</body>
+</html>

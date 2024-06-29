@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Library Options</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url('https://images6.alphacoders.com/130/thumb-1920-1302991.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        background-color: rgba(255, 255, 204, 0.9);
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    .image-container img {
+        width: 350px; /* Adjust the image width as needed */
+        height: 400px; /* Set the desired height */
+        border-radius: 10px;
+        margin-right: 20px;
+        object-fit: cover;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .form-container {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-container h2 {
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    .form-container a {
+        display: block;
+        width: 80%; /* Decreased the width to 80% */
+        padding: 12px;
+        margin: 10px 0;
+        background-color: #ffa726;
+        color: white;
+        text-decoration: none;
+        border-radius: 15px; /* Increased the border radius for rounded corners */
+        font-size: 18px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        text-align: center;
+    }
+
+    .form-container a:hover {
+        background-color: #fb8c00;
+        transform: scale(1.05);
+    }
+
+    form input[type="number"] {
+        width: calc(100% - 22px);
+        padding: 10px;
+        margin: 20px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        background-color: #fff8e1;
+    }
+
+    form input[type="submit"] {
+        width: 100%;
+        padding: 12px;
+        background-color: #ffa726;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 18px;
+        transition: background-color 0.3s ease;
+    }
+
+    form input[type="submit"]:hover {
+        background-color: #fb8c00;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img src="https://i.pinimg.com/736x/e6/e3/1b/e6e31b44adaad9715cb708ef45c9165b.jpg" alt="Library Image">
+        </div>
+        <div class="form-container">
+            <h2>Select an Option According to Your Need</h2>
+            <a href="issuebyid.html">Issue Book</a>
+            <a href="Returnbookform.html">Return Book</a>
+            <a href="displayalldetails.jsp">View All Books</a>
+            <a href="veiwbookbyid.html">View Book by ID</a>
+            <a href="Goner.html">View Book by Genre</a>
+        </div>
+    </div>
+</body>
+</html>

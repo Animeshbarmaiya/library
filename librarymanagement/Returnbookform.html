@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert Book</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url('https://images6.alphacoders.com/130/1304944.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        color: #333333;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+    }
+
+    form {
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        width: 350px;
+        text-align: center;
+        position: relative;
+    }
+
+    h3 {
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    form input[type="number"],
+    form input[type="text"] {
+        width: calc(100% - 24px);
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        background-color: #f9f9f9;
+        color: #333333;
+        transition: border-color 0.3s ease;
+    }
+
+    form input[type="number"]:focus,
+    form input[type="text"]:focus {
+        border-color: #1e90ff;
+    }
+
+    form input[type="submit"] {
+        width: 100%;
+        padding: 12px;
+        background-color: #ffcc00;
+        color: #333333;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 18px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    form input[type="submit"]:hover {
+        background-color: #e6b800;
+        color: #ffffff;
+    }
+
+    form label {
+        font-weight: bold;
+        display: block;
+        margin: 10px 0 5px;
+        text-align: left;
+        color: #333333;
+    }
+
+    .form-image {
+        position: absolute;
+        left: -160px; /* Adjust the position */
+        top: 0;
+    }
+
+    .form-image img {
+        width: 150px;
+        height: auto;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <form action="insertbook">
+           
+            <h3>Enter Return Book Details</h3>
+            <label for="id">Enter Book Id:</label>
+            <input type="number" id="id" name="id" required>
+
+            <label for="name">Enter Book Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="Author">Enter Author Name:</label>
+            <input type="text" id="Author" name="Author" required>
+
+            <label for="joner">Enter Genre Name:</label>
+            <input type="text" id="joner" name="joner" required>
+
+            <label for="Price">Enter Book Price:</label>
+            <input type="number" id="Price" name="Price" required>
+
+            <input type="submit" value="Return">
+        </form>
+    </div>
+</body>
+</html>

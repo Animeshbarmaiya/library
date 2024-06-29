@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Registration Form</title>
+<style>
+    body {
+        background-image: url('https://wallpaperaccess.com/full/3346815.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        font-family: 'Arial', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 250, 240, 0.9); /* Candlelight color */
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+        animation: fadeIn 2s ease-in-out;
+        max-width: 900px;
+        width: 100%;
+    }
+
+    .form-container {
+        padding: 20px;
+        flex: 1;
+    }
+
+    .form-container h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #800000; /* Maroon */
+        font-size: 24px;
+    }
+
+    .form-container label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+        color: #333;
+        font-size: 14px;
+    }
+
+    .form-container input[type="email"],
+    .form-container input[type="password"] {
+        width: calc(100% - 20px);
+        padding: 12px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 16px;
+        transition: border-color 0.3s ease;
+    }
+
+    .form-container input[type="email"]:focus,
+    .form-container input[type="password"]:focus {
+        border-color: #800000; /* Maroon */
+    }
+
+    .form-container input[type="submit"] {
+        width: 100%;
+        padding: 12px;
+        background-color: #800000; /* Maroon */
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 18px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .form-container input[type="submit"]:hover {
+        background-color: #4d0000; /* Darker Maroon */
+        transform: scale(1.05);
+    }
+
+    .image-container {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-container img {
+        max-width: 100%;
+        height: 450px; /* Set the desired height */
+        border-radius: 20px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        object-fit: cover; /* Ensure the image covers the set height without distortion */
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>Enter Details</h2>
+            <form action="useroption" method="post">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="psw">Password:</label>
+                <input type="password" id="psw" name="psw" required>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="image-container">
+            <img src="https://i.pinimg.com/564x/f8/ad/16/f8ad16b6f8b194813b3408506f537495.jpg" alt="Form Image">
+        </div>
+    </div>
+</body>
+</html>

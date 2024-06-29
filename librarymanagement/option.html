@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Library Management Options</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url('https://wallpapers.com/images/featured/d4w62mny8rdusxe0.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .form-container {
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        border: 2px solid rgba(0, 0, 0, 0.1);
+        animation: fadeIn 2s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    h1 {
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .links-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+  .form-container a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    background-color: #40E0D0; /* Turquoise green */
+    color: #333; /* Darker text color */
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 16px; /* Larger font size */
+    font-weight: 500; /* Slightly bold */
+    font-family: 'Book Antiqua', serif; /* Change font family to Book Antiqua */
+    transition: background-color 0.3s ease, transform 0.3s ease, font-size 0.3s ease; /* Added font-size transition */
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+
+
+    .form-container a::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.2);
+        transition: opacity 0.3s ease;
+        opacity: 0;
+    }
+
+    .form-container a:hover::before {
+        opacity: 1;
+    }
+
+    .form-container a:hover {
+        background-color: #00CED1; /* Lighter turquoise green on hover */
+        transform: scale(1.05);
+        font-size: 18px; /* Increased font size on hover */
+    }
+
+    @keyframes slideIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .form-container a {
+        animation: slideIn 0.5s ease-in-out;
+    }
+</style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Select an Option</h1>
+        <div class="links-container">
+            <a href="Addbookform.html">Add Books</a>
+            <a href="Update.html">Update Books</a>
+            <a href="displayalldetails.jsp">View All Books</a>
+            <a href="Goner.html">View Book by Genre</a>
+            <a href="veiwbookbyid.html">View Book by ID</a>
+            <a href="deletebook.html">Delete Book by ID</a>
+        </div>
+    </div>
+</body>
+</html>
